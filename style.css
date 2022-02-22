@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;800;900&display=swap');
+body {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url('./pinpong-bg.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+@media (max-width:400px) {
+    body {
+        background-size: cover;
+    }
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 150px;
+    background: rgba( 255, 255, 255, 0.25);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37);
+    backdrop-filter: blur( 4px);
+    -webkit-backdrop-filter: blur( 4px);
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18);
+    padding: 16px 32px;
+}
+
+select {
+    margin-top: 30px;
+    padding: 8px;
+    cursor: pointer;
+}
+
+.buttons {
+    margin-top: 30px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.buttons button {
+    margin-left: 25px;
+    padding: 8px;
+    border-radius: 3px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.buttons button:first-child {
+    margin-left: 0;
+}
+
+.red {
+    color: red;
+}
+
+.green {
+    color: green;
+}
+
+#reset {
+    margin-top: 25px;
+    padding: 8px;
+    border-radius: 3px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
